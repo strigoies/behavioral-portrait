@@ -1,0 +1,31 @@
+lightningDB:
+  hosts:
+    - [ '192.168.11.12', 8123 ]
+    - [ '192.168.11.13', 8123 ]
+  # 用户名 默认: default
+  username: bigdata
+  # 密码 默认: ''
+  password: bigdata-fusion3.0
+  # 数据库
+  database: yisa_oe
+  # 人脸聚类分布式表
+  faceGroupDistributedTable: yisa_oe.face_group_view_all
+  # 驾乘人脸聚类分布式表
+  faceGroupPlateDistributedTable: face_group_plate_view_all
+  # 人员画像每日表-人脸
+  behavioralPortraitDistributedTable: behavioral_portrait_all
+  # 人员画像聚类表-人脸
+  behavioralPortraitGroupDistributedTable: behavioral_portrait_group_all
+  # 人员画像每日表-驾乘人脸
+  behavioralPortraitPlateDistributedTable: behavioral_portrait_plate_all
+  # 人员画像聚类表-驾乘人脸
+  behavioralPortraitPlateGroupDistributedTable: behavioral_portrait_plate_group_all
+
+mysql:
+  host: 192.168.11.12
+  port: 3306
+  username: web
+  password: web-fusion3.0
+  database: fusion_dev
+  # 点位表
+  sysLocationTable: sys_location
